@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/base_navigation"
+    app:startDestination="@id/notesFragment">
+
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.example.my_app.ui.notes.notes.NotesFragment"
+        android:label="NotesFragment" />
+
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.example.my_app.ui.notes.news.NewsFragment"
+        android:label="NewsFragment" />
+    <fragment
+        android:id="@+id/createNoteFragment"
+        android:name="com.example.my_app.ui.notes.notes.CreateNoteFragment"
+        android:label="CreateNoteFragment" />
+
+</navigation>
