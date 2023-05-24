@@ -18,6 +18,8 @@ class MainActivity : AppCompatActivity() {
 
         val bottomView=findViewById<BottomNavigationView>(R.id.bottom_nav)
         val navController=findNavController(R.id.container)
+
+
         navController.addOnDestinationChangedListener { controller, destination, arguments ->
             if(destination.id==R.id.createNoteFragment){
                 bottomView.visibility= View.GONE

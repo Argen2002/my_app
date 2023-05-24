@@ -23,9 +23,9 @@ class NotesFragment: Fragment() {
     }
 
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        initListeners()
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+    initListeners()
     }
     private fun initListeners(){
         binding?.btnFab?.setOnClickListener { //обработка
